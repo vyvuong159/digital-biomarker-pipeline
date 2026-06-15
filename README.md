@@ -26,7 +26,7 @@ This repository contains a modular, end-to-end data processing pipeline designed
 *Note: The datasets contained in this repository are synthetic and created for demonstration purposes only. They do not contain any Protected Health Information (PHI) or real-world user data.*
 
 **1. Baseline classifier**
-- What it is: A collection of participant profiles, including demographics and survey scores. Level: Participant level (one row per person).
+- What it is: A collection of participant profiles, including demographics, survey scores, and a label indicating their clinical status (Healthy vs. MCI). Level: Participant level (one row per person).
 - Purpose: Provides the "ground truth" to train models that distinguish between healthy individuals and those with early signs of cognitive impairment.
 
 **2. High-frequency burst testing**
