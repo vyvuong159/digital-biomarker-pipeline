@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.venv
+env/
+venv/
+venv_*/
+.python-version
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Data
+data/*.csv
+data/*.parquet
+data/*.json
+# (We keep .gitkeep files so the empty directories are tracked)
+!data/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
