@@ -54,7 +54,7 @@ Right now, to check someone’s memory, a doctor usually has to sit down with th
 - Feature merging: Merge all aggregated metrics into the baseline dataset
 - Outlier and missingness treatment: 
     - Cap extreme physiological noise at the 1st and 99th percentiles
-    - Impute remaining missing values utilizing K-Nearest Neighbors (KNN) Imputation (\(K=5\)) based on demographic indices
+    - Impute remaining missing values utilizing K-Nearest Neighbors (KNN) Imputation (K=5) based on demographic indices
 - Feature standardization: Scale all 176 quantitative cognitive columns using StandardScaler to yield a mean of 0 and standard deviation of 1
 
 ## Exploratory Data Analysis (in-progress)
