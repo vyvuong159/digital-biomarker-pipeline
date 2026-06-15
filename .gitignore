@@ -25,3 +25,8 @@ data/*.json
 
 # Notebooks
 .ipynb_checkpoints/
+
+# Build/Package artifacts
+*.egg-info/
+build/
+dist/
