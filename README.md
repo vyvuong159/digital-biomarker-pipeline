@@ -58,14 +58,14 @@ Right now, to check someone’s memory, a doctor usually has to sit down with th
 - Feature standardization: Scale all 176 quantitative cognitive columns using StandardScaler to yield a mean of 0 and standard deviation of 1
 
 ## Exploratory Data Analysis (in-progress)
-- Demographic profile table: Compute the distribution of Age, Sex, and Education stratified cleanly by MCI_Status.
-- Construct validity vorrelations: Run a Pearson Correlation (\(r\)) matrix between PAL_Total_Errors_Adjusted and the gold-standard Tele_MoCA_Total_Score from the validation cohort. Verify that an inverse relationship exists (\(r \approx -0.31\) to \(-0.35\)).
-- Feature distribution mapping: Generate box plots tracking the divergence of typing flight-times, learning slopes, and step counts across both classification boundaries.
+- Demographic profile table: Compute the distribution of Age, Sex, and Education stratified cleanly by MCI_Status
+- Construct validity vorrelations: Run a Pearson Correlation ($r$) matrix between `PAL_Total_Errors_Adjusted` and the gold-standard `Tele_MoCA_Total_Score` from the validation cohort. Verify that an inverse relationship exists ($r \approx -0.31$ to $-0.35$)
+- Feature distribution mapping: Generate box plots tracking the divergence of typing flight-times, learning slopes, and step counts across both classification boundaries
 
 ## Modeling (in-progress)
 - Class imbalance mitigation: To protect the model from the severe baseline class imbalance (556 MCI vs. 16,234 Controls), apply a 3:1 majority-to-minority bootstrap downsampling strategy strictly within the training folds to avoid data leakage.
 - Nested cross-validation: Implement a 5-fold outer/ 3-fold inner cross-validation loop
-    - Inner Loop: Used to grid search optimal hyperparameter values for the regularization penalty coefficient (\(\alpha \))
+    - Inner Loop: Used to grid search optimal hyperparameter values for the regularization penalty coefficient ($\alpha$)
     - Outer Loop: Used to estimate generalized clinical error
 - Main model: Train a Logistic Regression model with Ridge Penalization (L2 Regularization)
 - Evaluation metrics: Compute and track the Mean AUROC (Area Under the Receiver Operating Characteristic), Sensitivity, Specificity, and F1-score across the cross-validation folds
