@@ -22,10 +22,9 @@ This repository contains a modular, end-to-end data processing pipeline designed
 * **Engineering logic:** Cleaning strategies are informed by the engineering constraints of the sensors (e.g., handling backfilled cache data vs. true non-use)
 * **Modularity:** Designed for maintainability, with clear separation between raw data processing and feature engineering
 
-## Data Stewardship & Ethics
+## Datasets (synthetic)
 *Note: The datasets contained in this repository are synthetic and created for demonstration purposes only. They do not contain any Protected Health Information (PHI) or real-world user data.*
 
-## Datasets (synthetic)
 **1. Baseline classifier**
 - What it is: A collection of participant profiles, including demographics and survey scores. Level: Participant level (one row per person).
 - Purpose: Provides the "ground truth" to train models that distinguish between healthy individuals and those with early signs of cognitive impairment.
